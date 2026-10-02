@@ -1,8 +1,9 @@
 Setting up movement in Unity:
 
 Edit → Project Settings → Player → Other Settings → Active Input Handling → both
-Make all platforms new layer called Ground, in player movement script put ground layer to ground (so that groundcheck works)
+Make all platforms new layer called Ground, in player movement script put ground layer to ground (so that groundcheck works) (after saving script)
 Create new asset → 2d → physics material 2d, set friction = 0 → drag into player’s box collider material
+Drag RigidBody2d into player in the script section
 Create empty child of player called ground check, put at player’s feet, drag into groundcheck thing in player movement script (after saving script)
 
 Walking Enemy:
