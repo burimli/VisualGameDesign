@@ -21,7 +21,7 @@ public class projectilescript : MonoBehaviour
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.CompareTag("Player")){
-            Destroy(collision.gameObject);
+            player.transform.position = new Vector3(respawnPoint.position);
         }
     }
 }
