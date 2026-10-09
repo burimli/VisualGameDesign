@@ -29,5 +29,5 @@ public class projectilescript : MonoBehaviour
 
     // Drag projectile script into projectile
     // Create new empty game object as child of player, drag it to where the projectile fires out of, and drag into launch offset
-    // drag the projectile into projectile prefab 
+    // drag the projectile into prefabs and then drag in the player script into projectile prefab 
     // enemies must be tagged as "Enemy" and player must be tagged as "Player" for the projectile to destroy them
