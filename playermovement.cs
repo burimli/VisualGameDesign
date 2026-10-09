@@ -9,6 +9,8 @@ public class playermovement : MonoBehaviour
     private float jumpingPower = 350;
     public const string RIGHT = "right";
     public const string LEFT = "left";
+    public projectilescript projectilePrefab;
+    public Transform launchOffset;
     string sprint = "false";
     string pressed;
 
@@ -38,6 +40,10 @@ public class playermovement : MonoBehaviour
         }
         else {
             sprint = "false";
+        }
+
+        if (Input.GetKeyDown(KeyCode.E)) {
+            Instantiate(projectilePrefab, launchOffset.position, transform.rotation);
         }
         
     }
